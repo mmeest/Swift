@@ -8,8 +8,17 @@
 </h3>
 
 <p align="left"><img src="mindmap.jpg" width="450px"></p>
-<p>Swift Mind Map</p>
+*Swift Mind Map*
 
+## Contents
+- [Swift](#swift)
+- [Installing Swift in Windows](#installing-swift-in-windows)
+- [Variables](#variables)
+- [Datatypes](#datatypes)
+- [IF Statement](#if-statement)
+- [Switch Statements](#switch-statements)
+- [Loops](#loops)
+- [Functions](#functions)
 
 ## Swift
 **Authors** - Chris Lattner, Doug Gregor, John McCall, Ted Kremenek, Joe Grof\
