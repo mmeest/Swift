@@ -10,6 +10,7 @@
 <p align="left"><img src="mindmap.jpg" width="450px"></p>
 *Swift Mind Map*
 
+
 ## Contents
 - [Swift](#swift)
 - [Installing Swift in Windows](#installing-swift-in-windows)
@@ -20,12 +21,14 @@
 - [Loops](#loops)
 - [Functions](#functions)
 
+
 ## Swift
 **Authors** - Chris Lattner, Doug Gregor, John McCall, Ted Kremenek, Joe Grof\
 **Developer** - Apple Inc\
 **First appeared** - June 2, 2014
 
 https://swift.org/
+
 
 ## Installing Swift in Windows
 
@@ -84,6 +87,7 @@ break;
 } */
 ```
 
+
 ## Variables
 **// some comment** - single line comment
 **/* some comment */*** - multi line comment
@@ -120,6 +124,7 @@ var myNumberOfApples = 19
 let c = 10
 ```
 
+
 ## Datatypes
 **String:**   - Piece of text\
 **Int:**      - Whole numbers positive and negative\
@@ -139,11 +144,10 @@ var c:Float = 2.3               // Float type variable
 var d:Double = 12.9             // Double type variable
 var e:Bool = true               // Boolean type variable
 
-
-
 print(Int(c))                   // Convverts float to integer
 print(Int(d))                   // Converts double to integer
 ```
+
 
 ## if Statement
 Comparsion operators:
@@ -221,6 +225,7 @@ if first != second {
     // Prints "It's really warm. Don't forget to wear sunscreen."
 ```
 
+
 ## Switch statements
 Switch statements let make decisions with your code
 ```
@@ -248,6 +253,7 @@ switch someCharacter {
         print("some fallback")
 }
 ```
+
 
 ## Loops
 To use when needed repeat pieces of code
@@ -285,6 +291,7 @@ repeat {
     counter = counter - 1
 } while counter_2 >
 ```
+
 
 ## Functions
 **func** - keyword to declare function
