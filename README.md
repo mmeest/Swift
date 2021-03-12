@@ -20,6 +20,9 @@
 - [Switch Statements](#switch-statements)
 - [Loops](#loops)
 - [Functions](#functions)
+- [Classes](#classes)
+- [Inheritance](#inheritance)
+- [UIKit](#uikit)
 
 
 ## Swift
@@ -294,5 +297,129 @@ repeat {
 
 
 ## Functions
+https://docs.swift.org/swift-book/LanguageGuide/Functions.html
 **func** - keyword to declare function
+```
+func addTwoNumbers(){
+    let a = 1
+    let b = 2
+    let c = a + b
 
+    print(c)                // prints out 3
+}
+
+addTwoNumbers()             // calling a function
+```
+
+Function with return value
+```
+func addNumbers() -> Int {  // -> Int - return type
+    let a = 1
+    let b = 1
+    let c = a + b
+
+    return c
+}
+
+let sum = addNumbers()       // assigning functions value to variable 'sum'
+
+print(sum)
+```
+
+Function with 2 arguments(with argument name and parameter name)
+```
+func addTwoNumbers(using number1:Int, and number2:Int) -> Int {     // add two numbers using number1 and number2
+    let a = number1
+    let b = number2
+
+    return a + b
+}
+
+let sum_2 = addTwoNumbers(using:2, and:2)
+
+print(sum_2)
+```
+
+Function with only parameter name
+```
+func addMyNumbers(number1:Int, number2:Int) -> Int {
+    let a = number1
+    let b = number2
+
+    return a + b
+}
+
+let sum_2 = addMyNumbers(number1:2, number2:2)
+
+print(sum_2)
+```
+
+## Classes
+https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html
+```
+class BlogPost {
+
+    var title = ""
+    var body = ""
+    var author = ""
+    var numberOfComments = 0
+
+    func addComment(){
+        numberOfComments += 1
+    }
+}
+
+let myPost = BlogPost()
+myPost.title = "Hello Playground"
+myPost.author = "Chris Ching"
+myPost.body = "Hello"
+myPost.addComment()
+print(myPost.numberOfComments)          // print out 1
+
+let mySecondPost = BlogPost()
+mySecondPost.title = "Goodbye Playground"
+mySecondPost.author = "John Travolta"
+mySecondPost.body = "Hello"
+print(mySecondPost.numberOfComments)    // print out 0
+```
+
+## Inheritance
+https://docs.swift.org/swift-book/LanguageGuide/Inheritance.html
+```
+class Car {
+    var topSpeed = 200
+
+    func drive() {
+        print("Driving at  \(topSpeed)")
+    }
+}
+
+class Futurecar: Car {          // Inheriting from Car class
+
+    override func drive(){      // Overriding drive method
+
+        super.drive()           // Calls the parent class method
+        print("Driving at \(topSpeed + 50)")
+    }
+
+    func fly() {
+        print("Flying")
+    }
+}
+
+let myRide = Car()
+myRide.topSpeed
+myRide.drive()
+
+let myNewRide = Futurecar()
+myNewRide.topSpeed
+myNewRide.drive()
+myNewRide.fly()
+```
+
+<p align="center"><img src="uikit.jpg" width="250px"></p>
+
+## UIKit
+https://developer.apple.com/documentation/uikit
+Construct and manage a graphical, event-driven user interface for your iOS or tvOS app. 
+The UIKit framework provides the required infrastructure for your iOS or tvOS apps. It provides the window and view architecture for implementing your interface, the event handling infrastructure for delivering Multi-Touch and other types of input to your app, and the main run loop needed to manage interactions among the user, the system, and your app. Other features offered by the framework include animation support, document support, drawing and printing support, information about the current device, text management and display, search support, accessibility support, app extension support, and resource management.
