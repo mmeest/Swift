@@ -424,7 +424,7 @@ myNewRide.fly()
 ```
 
 
-<p align="center"><img src="uikit.jpg" width="250px"></p>
+<p align="center"><img src="uikit.jpg" width="450px"></p>
 
 ## UIKit
 https://developer.apple.com/documentation/uikit
@@ -627,7 +627,7 @@ myPost_2.title = "Learn Swift for Beginners"
 print(myPost_2.fullTitle)
 ```
 
-<p align="center"><img src="collections.png" width="250px"></p>
+<p align="center"><img src="collections.png" width="450px"></p>
 
 <h2 align="center">
     <strong>Collections</strong>
